@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>local lael 17</title>
+
+</head>
+
+<nav class="navbar bg-primary">
+    <div class="container-fluid text-center">
+        <a class="navbar-brand href="#"></a>
+        <h1 class="navbar-brand m-auto text-ligth">Local lael17</h1>
+    </div>
+</nav>
+
+<body class="text-center">
+    <body class="text-center">
+        <center>
+        <button type="button" class="btn btn-info"  data-bs-toggle="modal" data-bs-target="#agregarR"0>Agregar
+        </button>
+        
+        <div class="modal fade" id="agregarR" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5 w-100 m-auto" id="exampleModalLabel"> Registros</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" class="form-control text-center">
+        
+                <label for="ap">1er-Apellido:</label>
+                <input type="text" id="ap" class="form-control text-center">
+        
+                <label for="am">2do-Apellido:</label>
+                <input type="text" id="am" class="form-control text-center">
+        
+                <label for="g">Grupo:</label>
+                <select name="grupo" id="g" class="form-select text-center">
+                    <option value="401">401</option>
+                    <option value="402">402</option>
+                    <option value="403">403</option>
+                    <option value="404">404</option>
+                    <option value="405">405</option>
+                    <option value="406">406</option>
+                    <option value="407">407</option>
+                </select>
+        
+                <label for="c">Carrera:</label>
+                <select name="carrera" id="c" class="form-select text-center">
+                    <option value="Ventas">Ventas</option>
+                    <option value="Programación">Programación</option>
+                    <option value="Máquinas">Máquinas</option>
+                </select>
+                </div>
+                <div class="modal-footer">
+                <button type="button" id="borrar" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" id="guardar" class="btn btn-success" data-bs-dismiss="modal" aria-label="close">
+                    <i class="fas fa-save mx-2"></i> Guardar
+                </button>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <div id="res"></div>
+            
+    <div class="modal fade" id="actualizarR" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+        <h1 class="modal-title fs-5 w-100 m-auto" id="exampleModalLabel">Actualización de Registros</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nom" class="form-control  text-center">
+    
+            <label for="ap">Apellido Paterno:</label>
+            <input type="text" id="apa" class="form-control  text-center">
+    
+            <label for="am">Apellido Materno:</label>
+            <input type="text" id="ama" class="form-control  text-center">
+    
+            <label for="g">Grupo:</label>
+            <select name="grupo" id="gr" class="form-select text-center">
+                <option value="401">401</option>
+                <option value="402">402</option>
+        <option value="403">403</option>
+    <option value="404">404</option>
+    <option value="405">405</option>
+    <option value="406">406</option>
+    <option value="407">407</option>
+            </select>
+            <label for="c">Carrera:</label>
+            <select name="carrera" id="ca" class="form-select text-center">
+                <option value="Ventas">Ventas</option>
+                <option value="Programación">Programación</option>
+                <option value="Máquinas y Herramientas">Máquinas y Herramientas</option>
+            </select>
+            
+    
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                
+                <button type="button" id="actualizar" class="btn btn-success" data-bs-dismiss="modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-floppy-fill mx-2" viewBox="0 0 16 16">
+                    <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5z"/>
+                    <path d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5zM9 1h2v4H9z"/>
+                </svg>
+                Actualizar
+            </button>
+            
+            </div>
+            </div>
+        </div>
+        </div>
+</center>
+</body>
+
+<script src="sweetalert2.min.css"></script>
+<script src="sweetalert2.all.min.js"></script>
+<script src="bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
+</html>
